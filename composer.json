@@ -1,0 +1,16 @@
+{
+    "name": "0test/evocms-sitemap",
+    "description": "Sitemap XML for evocms 3.x",
+    "autoload": {
+        "psr-4": {
+            "EvolutionCMS\\SitemapXml\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EvolutionCMS\\SitemapXml\\SitemapXmlServiceProvider"
+            ]
+        }
+    }
+}
