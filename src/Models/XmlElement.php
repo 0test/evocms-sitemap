@@ -1,5 +1,5 @@
 <?php
-namespace EvolutionCMS\Sitemapxml\Models;
+namespace EvolutionCMS\SitemapXml\Models;
 use Carbon\Carbon;
 use EvolutionCMS\Facades\UrlProcessor;
 use EvolutionCMS\Models\SiteContent;

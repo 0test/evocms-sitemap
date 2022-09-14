@@ -1,5 +1,5 @@
 <?php 
-namespace EvolutionCMS\Sitemapxml;
+namespace EvolutionCMS\SitemapXml;
 
 use EvolutionCMS\ServiceProvider;
 use EvolutionCMS\SitemapXml\Controllers\SitemapXML;
@@ -10,14 +10,14 @@ class SitemapXmlServiceProvider extends ServiceProvider
     public function register()
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes.php');
-        $this->app->alias(SitemapXML::class, 'SitemapXml');
+        $this->app->alias(SitemapXML::class, 'sitemapxml');
     }
     public function boot()
     {
         $this->loadViewsFrom(__DIR__ . '/../views', $this->namespace);
 
         $this->publishes([
-            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/sitemapxml',
+            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/packages/sitemapxml',
         ]);
     }
 }

@@ -1,19 +1,14 @@
 <?php
-namespace EvolutionCMS\Sitemapxml\Controllers;
+namespace EvolutionCMS\SitemapXml\Controllers;
 use EvolutionCMS\Models\SiteContent;
-use EvolutionCMS\Sitemapxml\Models\XmlElement;
-use Illuminate\Support\Facades\View;
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\View\FileViewFinder;
+use EvolutionCMS\SitemapXml\Models\XmlElement;
+
 class SitemapXML extends SiteContent
 {
 	public $config = [];
 	public $resources = [];
 	public function __construct()
 	{
-		$fs = new Filesystem;
-		$vf = new FileViewFinder($fs, [EVO_CORE_PATH . 'custom/packages/sitemapxml/views']);
-		View::setFinder($vf);
 		$this->config = $this->getConfig();
 	}
 	private function getConfig()
@@ -73,6 +68,6 @@ class SitemapXML extends SiteContent
 				$this->resources[$key]['priority'] = !empty($result[$this->config['priority']]) ? $result[$this->config['priority']] : $this->config['priority_default'];
 			}
 		}
-		return response()->view('sitemap', ['resources' => $this->resources])->header('Content-type', 'text/xml');
+		return response()->view('sitemapxml::sitemap', ['resources' => $this->resources])->header('Content-type', 'text/xml');
 	}
 }
