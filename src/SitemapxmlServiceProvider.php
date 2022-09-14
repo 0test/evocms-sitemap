@@ -1,12 +1,12 @@
 <?php 
 namespace EvolutionCMS\SitemapXml;
-
 use EvolutionCMS\ServiceProvider;
 use EvolutionCMS\SitemapXml\Controllers\SitemapXML;
 
 class SitemapXmlServiceProvider extends ServiceProvider
 {
     protected $namespace = 'sitemapxml';
+    
     public function register()
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes.php');
