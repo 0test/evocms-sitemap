@@ -14,8 +14,10 @@ class SitemapXmlServiceProvider extends ServiceProvider
     }
     public function boot()
     {
+        $this->loadViewsFrom(__DIR__ . '/../views', $this->namespace);
+
         $this->publishes([
-            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/packages/sitemapxml/config',
+            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/packages/sitemapxml',
         ]);
     }
 }
