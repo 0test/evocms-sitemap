@@ -15,7 +15,7 @@ class SitemapXmlServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/sitemapxml/config',
+            __DIR__ . '/../publishable/configs' => EVO_CORE_PATH .'custom/packages/sitemapxml/config',
         ]);
     }
 }
