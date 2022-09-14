@@ -1,0 +1,19 @@
+{
+  "name": "evolutioncms/sitemapxml",
+  "require": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "EvolutionCMS\\Sitemapxml\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EvolutionCMS\\Sitemapxml\\SitemapxmlServiceProvider"
+      ]
+
+    }
+  }
+}
