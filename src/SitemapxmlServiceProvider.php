@@ -2,9 +2,9 @@
 namespace EvolutionCMS\Sitemapxml;
 
 use EvolutionCMS\ServiceProvider;
-use EvolutionCMS\Sitemapxml\Controllers\SitemapXML;
+use EvolutionCMS\SitemapXml\Controllers\SitemapXML;
 
-class SitemapxmlServiceProvider extends ServiceProvider
+class SitemapXmlServiceProvider extends ServiceProvider
 {
     protected $namespace = 'sitemapxml';
     public function register()
