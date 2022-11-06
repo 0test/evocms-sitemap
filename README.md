@@ -2,6 +2,8 @@
 
 Генерирует по адресу /sitemap.xml карту сайта.
 
+[![CMS Evolution](https://img.shields.io/badge/CMS-Evolution-brightgreen.svg)](https://github.com/evocms-community/evolution)  ![PHP version](https://img.shields.io/badge/PHP->=v7.4-green.svg?php=7.4) 
+
 ## Установка
 
 ```
