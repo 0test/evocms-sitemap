@@ -14,8 +14,8 @@ php artisan package:installrequire 0test/evocms-sitemap "*"
 php artisan vendor:publish --provider="EvolutionCMS\SitemapXml\SitemapXmlServiceProvider"
 ```
 ## Опции
-
-Переименуйте и отредактируйте файл `core\custom\packages\sitemapxml\example.config.php` под свои нужды.
+Создайте папку `sitemapxml\config\` и создайте файл `config.php`.
+Пример конфига в файле `example.config.php`.
 ```php
 return [
 	'exclude' => 'sitemap_exclude',		// имя параметра TV типа checkbox для "Исключить из карты сайта"
