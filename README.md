@@ -14,7 +14,7 @@ php artisan package:installrequire 0test/evocms-sitemap "*"
 php artisan vendor:publish --provider="EvolutionCMS\SitemapXml\SitemapXmlServiceProvider"
 ```
 ## Опции
-Создайте папку `sitemapxml\config\` и создайте файл `config.php`.
+Создайте папку `sitemapxml\config\` и в ней файл `config.php`.
 Пример конфига в файле `example.config.php`.
 ```php
 return [
